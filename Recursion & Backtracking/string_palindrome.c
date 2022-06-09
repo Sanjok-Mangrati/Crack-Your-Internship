@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-int reverse(char str[],int i,int len){
+int reverse(char str[],int i,int len){              //Time Complexity is O(n)
     if(i==len/2)
         return 1;
     if(str[i]!=str[len - i - 1])
