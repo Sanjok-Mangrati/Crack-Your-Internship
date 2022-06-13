@@ -10,7 +10,7 @@ using namespace std;
 
 void findCombination(int index, int target, int arr[], vector<vector<int>> &ans, vector<int> &ds, int n){
     //Base Case
-    if(target == 0){                        //Time Complexity is (2^n * k)
+    if(target == 0){                        //Time Complexity is O(2^n * k)
         ans.push_back(ds);
         return;
     }
