@@ -8,7 +8,7 @@ The solution set must not contain duplicate subsets. Return the solution in any 
 using namespace std;
 
 void subsets(int index, int arr[], vector<int> &ds, vector<vector<int>> &ans, int n){
-    ans.push_back(ds);                                  //Time complexity is O(2^n * K)
+    ans.push_back(ds);                                  //Time complexity is O(2^n * n)
 
     for(int i=index;i<n;i++){
         if(i>index && arr[i] == arr[i-1]) continue;
@@ -35,5 +35,7 @@ int main(){
         }
         cout << endl;
     }
+
+    return 0;
 
 }

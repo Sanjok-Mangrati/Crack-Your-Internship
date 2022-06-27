@@ -5,8 +5,8 @@
 using namespace std;
 
 void subsetSum(int i,int sum, vector<int> &sums, int arr[], int n){
-    if(i==n){                           //Time Complexity is O(2^n)
-        sums.push_back(sum);
+    if(i==n){                           //Time Complexity is O(2^n + 2^nLog(2^n))
+        sums.push_back(sum);               //2^nLog(2^n) for sorting the array
         return;
     }
     //Pick
